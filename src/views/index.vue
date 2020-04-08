@@ -1,5 +1,4 @@
 <template>
-
     <v-content class="d-flex align-center">
       <Comingsoon></Comingsoon>
     </v-content>
