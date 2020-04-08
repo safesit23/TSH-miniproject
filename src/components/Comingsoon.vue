@@ -9,10 +9,10 @@
 
     <v-row>
       <v-col col="3" class="justify-center d-flex">
-        <v-btn outlined large fab color="white">
-          <a href="facebook.link" target="_blank"
-            ><v-icon>fab fa-facebook</v-icon></a
-          >
+        <v-btn text icon outlined color="white">
+          <a href="facebook.link" target="_blank">
+            <v-icon>fab fa-facebook</v-icon>
+          </a>
         </v-btn>
         <v-btn text icon outlined color="gray">
           <v-icon>fab fa-instagram</v-icon>

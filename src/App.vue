@@ -1,10 +1,6 @@
 <template>
   <v-app style="background-color: #8b181b;">
-
-    <v-content class="d-flex align-center">
-      <router-view />
-    </v-content>
-
+    <router-view />
     <v-footer class="font-weight-medium mt-2" style="background-color: #8b181b;">
       <v-col class="text-center" cols="12">
         <p>&copy; 2020 The Showhopper</p>
@@ -22,7 +18,7 @@ export default {
 };
 </script>
 <style>
-p{
+p {
   color: white;
 }
 a {
