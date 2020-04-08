@@ -1,48 +1,35 @@
 <template>
-  <v-container style="background: white">
-      <h1>Musicals</h1>
-    <ul v-for="acts in musicals" :key="acts.id">
-        <li>Act {{acts.actName}}</li>
-            <ul v-for="detail in musicals" :key="detail.id">
-                <li>{{detail}}    |    aaa</li>
+  <v-content>
+    <v-container style="background: white; height: 700px">
+      <v-row class="px-1">
+        <v-col>
+          <h1 class="text-center">{{musicalName}}</h1>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <ul v-for="{actName,datails} in musicals" :key="actName">
+            <li>{{actName}}</li>
+            <ul v-for="{sceneId,scene,songs} in datails" :key="scene">
+              <li>{{scene}}</li>
+              <ul v-for="{id,songName,character} in songs" :key="id">
+                <li>{{songName}}..................................................{{character}}</li>
+              </ul>
             </ul>
-    </ul>
-  </v-container>
+          </ul>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-content>
 </template>
 
 <script>
+import KingAndI from "../data/KingAndI.json"
 export default {
   name: "Test",
   data: () => ({
-    musicals: [
-      {
-        actName: 1,
-        datails: [
-          {
-            scene: "Name1",
-            songs: [
-              {songName: "song1",
-              character: "Character 1"
-              }
-            ]
-          },
-          {
-            scene: "Name2",
-            songs: [
-              {songName: "song2",character: "Character 2"}
-            ]
-          },
-          {
-            scene: "Name3",
-            songs: [
-              {songName: "song3",character: "Character 3"}
-            ]
-          },
-        ]
-      }
-
-    ]
-
+    musicals: KingAndI,
+    musicalName: "King and I"
   })
 };
 </script>
