@@ -1,0 +1,55 @@
+[
+    {
+        "actName": "ACT I",
+        "datails": [
+            {
+                "scene": "Scene 1: Deck of the Chow Phya and Docks of Bangkok",
+                "songs": [
+                    {
+                        "songName": "I whistle a Happy Tune",
+                        "character": "Anna and Louis"
+                    }
+                ]
+            },
+            {
+                "scene": "Scene 2: The King's Throne Room",
+                "songs": [
+                    {
+                        "songName": "My Lord and Master",
+                        "character": "Tuptim"
+                    },
+                    {
+                        "songName": "Hello, Young Lovers",
+                        "character": "Anna"
+                    },
+                    {
+                      "songName": "The March of Siamese Children",
+                      "character": "Orchestra"
+                  }
+                ]
+            },
+            {
+                "scene": "Scene 3: On the Palace Grounds",
+                "songs": [
+                    {
+                        "songName": "A Puzzlement",
+                        "character": "King"
+                    }
+                ]
+            },
+            {
+              "scene": "Scene 4: The Schoolroom",
+              "songs": [
+                  {
+                      "songName": "The Royal Bangkok Academy",
+                      "character": "Royal Children and Wives"
+                  },
+                  {
+                    "songName": "Getting to Know You",
+                    "character": "Royal Children and Wives"
+                }
+              ]
+          }
+        ]
+    }
+]
