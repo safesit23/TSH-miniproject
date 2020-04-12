@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views/index.vue'
-import Testdata from '../views/test.vue'
+import Musical from '../views/musical.vue'
+import Dashboard from '../views/dashboard.vue'
+import MiniGame from '../views/minigame.vue'
 
 Vue.use(VueRouter)
 
@@ -12,10 +14,20 @@ const routes = [
         component: Index,
     },
     {
-        path: '/test',
-        name: 'Test',
-        component: Testdata,
+        path: '/musical',
+        name: 'Musical',
+        component: Musical,
     },
+    {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: Dashboard
+    },
+    {
+        path: '/bingo',
+        name: 'MiniGame',
+        component: MiniGame
+    }
 ]
 
 const router = new VueRouter({
