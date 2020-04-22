@@ -24,6 +24,14 @@
     </v-row>
   </v-container>
 </template>
+<style scoped>
+.theme--light.v-btn {
+  color: rgba(138, 25, 27);
+}
+a {
+  text-decoration: none;
+}
+</style>
 <script>
 export default {
   name: "Home",
