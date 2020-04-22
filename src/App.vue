@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   name: "App",
   data: () => ({
@@ -27,9 +29,5 @@ export default {
 body{
   background-color: #8b181b;
   color: white;
-}
-
-a {
-  text-decoration: none;
 }
 </style>
