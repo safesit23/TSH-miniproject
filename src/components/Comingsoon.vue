@@ -1,5 +1,5 @@
 <template>
-  <v-container class="about pb-12" >
+  <v-container class="about pb-12">
     <v-row class="justify-center pt-6">
       <img src="../../public/img/logoTSH_white.png" height="100px" />
     </v-row>
@@ -8,28 +8,38 @@
     </v-row>
     <v-row>
       <v-col col="3" class="justify-center d-flex">
-        <v-btn text icon outlined color="white">
-          <a href="facebook.link" target="_blank">
-            <v-icon>fab fa-facebook</v-icon>
-          </a>
+        <v-btn color="white" fab small depressed class="mx-3" :href="facebook.link">
+          <v-icon>{{facebook.icon}}</v-icon>
         </v-btn>
-        <v-btn text icon outlined color="gray">
-          <v-icon>fab fa-instagram</v-icon>
+
+        <v-btn color="white" fab small depressed class="mx-3" :href="instagram.link">
+          <v-icon>{{instagram.icon}}</v-icon>
         </v-btn>
+
+        <v-btn color="white" fab small depressed class="mx-3" :href="youtube.link">
+          <v-icon>{{youtube.icon}}</v-icon>
+        </v-btn>
+
       </v-col>
     </v-row>
   </v-container>
 </template>
-
 <script>
 export default {
   name: "Home",
   data: () => ({
     facebook: {
-      link: "https://www.facebook.com",
-      icon: ""
+      link: "https://www.facebook.com/theshowhopper.th",
+      icon: "fab fa-facebook"
     },
-    instagram: {}
+    instagram: {
+      link: "https://www.instagram.com/the.showhopper",
+      icon: "fab fa-instagram"
+    },
+    youtube: {
+      link: "https://www.youtube.com/channel/UCZwwytRtU9dOh7BtWSTL4Gw",
+      icon: "fab fa-youtube"
+    }
   })
 };
 </script>
