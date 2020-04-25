@@ -4,7 +4,7 @@
       <img src="../../public/img/logoTSH_white.png" height="100px" />
     </v-row>
     <v-row class="justify-center pt-5">
-      <h2 class="font-weight-medium" style="color:white">Hop on with Us !</h2>
+      <h4 class="font-weight-medium" style="color:white">Hop on with Us !</h4>
     </v-row>
     <v-row>
       <v-col col="3" class="justify-center d-flex">
@@ -25,6 +25,9 @@
   </v-container>
 </template>
 <style scoped>
+.v-application .pt-5{
+  padding-top: 40px !important
+}
 .theme--light.v-btn {
   color: rgba(138, 25, 27);
 }
