@@ -1,6 +1,6 @@
 <template>
-  <v-content>
-    <v-container
+  <b-content>
+    <b-container
       class="mt-5 justify-content-center"
       style="background: white; height: 700px"
     >
@@ -9,18 +9,18 @@
     </div>
     <div v-if="select===true">
         Choose:
-        <v-btn small color="primary" @click="setType(0)">Set 1</v-btn>
-        <v-btn small color="primary" @click="setType(1)">Set 2</v-btn>
+        <b-button small color="primary" @click="setType(0)">Set 1</b-button>
+        <b-button small color="primary" @click="setType(1)">Set 2</b-button>
     </div>
     <div v-else>
         Action:
-        <v-btn small color="primary" @click="resetGame()">Reset</v-btn>
+        <b-button small color="primary" @click="resetGame()">Reset</b-button>
     </div>
     <div>
         Name: {{listOfMusical}}
     </div>
-    </v-container>
-  </v-content>
+    </b-container>
+  </b-content>
 </template>
 
 <script>
