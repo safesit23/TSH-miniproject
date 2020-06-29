@@ -3,6 +3,12 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import vuetify from './plugins/vuetify';
+import Hotjar from 'vue-hotjar'
+
+Vue.use(Hotjar, {
+    id: '1877936',  // Hotjar Site ID
+    snippetVersion: 6
+})
 
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
